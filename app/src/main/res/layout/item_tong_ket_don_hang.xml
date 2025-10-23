@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <!-- 🔹 Tạm tính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tạm tính"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTamTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.020.000 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 🔹 Giảm giá chung -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giảm giá chung"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iconTooltipGiamGia"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/tooltip"
+             />
+
+        <TextView
+            android:id="@+id/tvGiamGiaChung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="0 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 🔹 Tổng giảm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tổng giảm"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTongGiam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 🔹 Tổng trước thuế -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tổng trước thuế"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTruocThue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.020.000 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 🔹 Thuế -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thuế"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iconTooltipThue"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/tooltip"
+             />
+
+        <TextView
+            android:id="@+id/tvThue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="602.000 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 🔹 Tổng thuế -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tổng thuế"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTongThue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.020.000 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 🔹 Tổng cộng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tổng cộng"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTongCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/bg_total_yellow"
+            android:text="6.622.000 đ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
+

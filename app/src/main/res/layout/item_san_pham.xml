@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_san_pham"
+    android:layout_marginTop="8dp">
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/tvTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cam AI HA800"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Dòng số lượng - đơn giá - thành tiền -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+
+        <TextView
+            android:id="@+id/tvSoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 x 4.200.000 đ"
+            android:textColor="#666" />
+
+    </LinearLayout>
+
+    <!-- Giảm giá -->
+    <TextView
+        android:id="@+id/tvGiamGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giảm giá: 0 đ"
+        android:textColor="#666"
+        android:layout_marginTop="4dp" />
+
+    <!-- Thành tiền -->
+    <!-- Thành tiền -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <!-- Nhãn -->
+        <TextView
+            android:id="@+id/tvLabelThanhTien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thành tiền"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <!-- Giá trị -->
+        <TextView
+            android:id="@+id/tvThanhTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.200.000 đ"
+            android:textColor="#0A57FF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
